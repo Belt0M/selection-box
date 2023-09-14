@@ -1,0 +1,72 @@
+/* Selection */
+
+.dropdown_c {
+	position: relative;
+	z-index: 9999;
+	flex: 2;
+}
+
+.selected span {
+	display: flex;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	color: #131313;
+	max-height: 3rem;
+	overflow-y: auto;
+}
+
+.selected span {
+	cursor: pointer;
+	min-width: 200px;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	margin: 0;
+	border: 0.1rem solid #00000050;
+}
+
+.selected span::before {
+	position: absolute;
+	content: 'Bot List';
+	background: #fff;
+	border: 0.1rem dashed #00000050;
+	width: 4rem;
+	height: 1.4rem;
+	font-weight: bold;
+	text-align: center;
+	left: -0.5rem;
+	top: -0.5rem;
+}
+
+.drop-content {
+	position: relative;
+}
+
+.drop-content ul {
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 195px;
+	background: #fff;
+	border-top: 0;
+	border-radius: 0 0 5px 5px;
+	padding: 0;
+	border-top: 0.1rem dashed grey;
+}
+
+.drop-content ul li {
+	margin: 0;
+}
+
+.drop-content ul li span {
+	display: flex;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #131313;
+	border-bottom: 0.1rem solid grey;
+}
+
+.drop-content ul li span:hover {
+	background: rgba(0, 0, 0, 0.1);
+	border-left: 5px solid rgba(0, 0, 0, 0.8);
+}
